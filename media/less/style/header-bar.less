@@ -1,0 +1,41 @@
+.lcb-room-header {
+    .search-history {
+        @media screen and (min-width: 1024px) {
+            min-width: 200px;
+        }
+        @media screen and (min-width: 1440px) {
+            min-width: 350px;
+        }
+        @media screen and (max-width: 1023px) {
+            display: none;
+        }
+    }
+}
+
+.lcb-account-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    .lcb-avatar {
+        display: inline-block;
+    }
+
+    .username-info {
+        display: inline-block;
+        vertical-align: middle;
+        color: @white;
+
+        .lcb-account-name {
+            display: block;
+            font-weight: 700;
+            padding-left: 5px;
+        }
+
+        .lcb-account-username {
+            font-weight: 700;
+            padding-left: 5px;
+        }
+    }
+}

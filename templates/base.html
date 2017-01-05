@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title><% block title %>OverTask - The power of developer <% endblock %></title>
+        <meta name="description" content="" />
+        <link rel="icon" type="image/png" href="./media/favicon.ico" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+        <!-- Schema.org markup for Google+ -->
+        <meta itemprop="name" content="OverTask - The power of developer">
+        <meta itemprop="image" content="https://source.unsplash.com/random">
+        <!-- Twitter Card data -->
+        <meta name="twitter:card" content="https://source.unsplash.com/random">
+        <meta name="twitter:site" content="https://overtask.tech">
+        <meta name="twitter:title" content="OverTask - The power of developer">
+        <meta name="twitter:description" content="OverTask. Where you can talk anything you want?">
+        <meta name="twitter:creator" content="Andy">
+        <!-- Twitter summary card with large image must be at least 280x150px -->
+        <meta name="twitter:image:src" content="https://source.unsplash.com/random">
+        <!-- Open Graph data -->
+        <meta property="og:title" content="OverTask - The power of developer" />
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://overtask.tech" />
+        <meta property="og:image" content="https://source.unsplash.com/random" />
+        <meta property="og:description" content="OverTask. Where you can talk anything you want?" />
+        <meta property="og:site_name" content="OverTask - The power of developer" />
+        <meta property="article:section" content="" />
+        <meta property="article:tag" content="lets, chat , xmpp, nodejs, javascript, reactjs, html, css, technology, c" />
+        <meta property="fb:admins" content="100003229800215" />
+        <% block css %><% endblock %>
+        <$ 'vendor' | css | safe $>
+        <$ 'style' | css | safe $>
+        <$ 'vendor' | js | safe $>
+        <% block js %><% endblock %>
+    </head>
+    <body class="<% block class %><% endblock %>" <% block attributes %><% endblock %>>
+        <% block body %><% endblock %>
+        <% block templates %><% endblock %>
+        <div class="not-support">
+              <span>
+                  Sorry! We're still not supporting mobile
+              </span>
+        </div>
+    </body>
+</html>

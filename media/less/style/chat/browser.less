@@ -1,0 +1,124 @@
+/*********************
+ * Rooms Browser
+ *********************/
+
+@roomBrowserHeader: 50px;
+
+.lcb-rooms-browser {
+    background: @white;
+}
+
+.lcb-rooms-list,
+.lcb-rooms-list-item {
+
+}
+
+.lcb-rooms-list {
+    -webkit-overflow-scrolling: touch;
+    .transform(translate3d(0,0,0));
+}
+
+.lcb-rooms-list-item-top {
+    padding-right: 60px;
+}
+
+.lcb-rooms-list-item-name,
+.lcb-rooms-list-item-slug {
+    vertical-align: middle;
+    display: block;
+    .text-overflow;
+    @media (max-width: @screen-xs-max) {
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+}
+
+.lcb-rooms-list-item-slug, .lcb-rooms-list-item-password {
+    font-size: 16px;
+    font-weight: 300;
+    @media (max-width: @screen-xs-max) {
+        margin-bottom: 10px;
+        display: block;
+    }
+}
+
+
+.lcb-rooms-list-item-slug {
+  background: #FF1654;
+  padding: 3px;
+  color: @white;
+}
+
+.lcb-rooms-list-item-description {
+  text-align: justify;
+}
+
+.lcb-rooms-list-item-last-active {
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    float: right;
+}
+
+.lcb-rooms-list-users,
+.lcb-rooms-list-user {
+    padding: 0;
+    margin: 0;
+}
+
+.lcb-rooms-list-users {
+    overflow: hidden;
+}
+
+.lcb-rooms-list-user {
+    margin: 2px;
+    display: block;
+    float: left;
+}
+
+.lcb-rooms-list-user-avatar {
+    .size(40px);
+    border-radius: 100%;
+}
+
+.lcb-rooms-list-item-switch {
+    font-size: 9px;
+    position: absolute;
+    right: 24px;
+    top: 12px;
+    @media (min-width: @screen-sm-max) {
+        font-size: 8px;
+    }
+}
+
+.lcb-rooms-browser-filter {
+    font-weight: 300;
+    font-size: 22px;
+    color: #aaa;
+    display: inline-block;
+     @media (max-width: @screen-xs-max) {
+         font-size: 18px;
+     }
+}
+
+.lcb-rooms-browser-filter-label {
+    margin-right: 5px;
+}
+
+.lcb-rooms-browser-filter-input {
+    background: none;
+    border: none;
+    .flex(1);
+    &:focus {
+        outline: none;
+    }
+}
+
+// Eugh Firefox
+@-moz-document url-prefix() {
+    .lcb-rooms-list-item {
+        width: 100%;
+        display: table;
+        table-layout: fixed;
+    }
+}

@@ -1,0 +1,32 @@
+<script type="text/x-handlebars-template" id="template-room-browser-item">
+    <div class="col-xs-9 col-sm-9 col-md-9 lcb-rooms-list-item" data-id="{{id}}">
+        <div class="room-images-and-name">
+            {{#if background}}
+            <a href="#!/room/{{id}}" class="room-images">
+                <img src="{{background}}" />
+            </a>
+            {{else}}
+            <a href="#!/room/{{id}}" class="room-images">
+                <img src="https://source.unsplash.com/random" />
+            </a>
+            {{/if}}
+            <div class="lcb-rooms-list-item-top">
+                {{#if hasPassword}}
+                <span class="lcb-rooms-list-item-password fa fa-lock"></span>
+                <a class="lcb-rooms-list-item-name" href="#!/room/{{id}}">{{name}}</a> {{else}}
+                <a class="lcb-rooms-list-item-name" href="#!/room/{{id}}">{{name}}</a> {{/if}}
+                <!-- <span class="lcb-rooms-list-item-slug">#{{slug}}</span> -->
+            </div>
+            <div class="overplay-black"></div>
+        </div>
+        <!-- <div class="lcb-rooms-list-item-description">{{description}}</div> -->
+        <ul class="lcb-rooms-list-users"></ul>
+        <div class="lcb-rooms-list-item-switch onoffswitch">
+            <input type="checkbox" class="switch lcb-rooms-switch" id="room-switch-{{id}}" data-id="{{id}}" />
+            <label class="switch lcb-rooms-switch-label" for="room-switch-{{id}}"></label>
+        </div>
+        <div class="lcb-rooms-list-item-last-active">
+            <i class="fa fa-clock-o"></i> <span class="value">{{lastActive}}</span>
+        </div>
+    </div>
+</script>

@@ -1,0 +1,80 @@
+.lcb-rooms-list {}
+
+.lcb-rooms-list-item {
+    padding: 0px;
+    .room-images-and-name {
+        position: relative;
+    }
+
+    .room-images {
+        width: 100%;
+        height: 100%;
+
+        img {
+            height: 200px;
+            width: 100%;
+            @media (min-width: 1024px) {
+              height: 300px;
+            }
+        }
+    }
+}
+
+.lcb-rooms-list-item-top {
+    padding-right: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    bottom: 5px;
+    left: 10px;
+    z-index: 2;
+    position: absolute;
+}
+
+.lcb-rooms-list-item-description {
+    text-align: justify;
+    bottom: 45px;
+    padding: 0 5px;
+    overflow-y: auto;
+    max-height: 100px;
+}
+
+.lcb-rooms-list-users {
+    background-color: @text-second;
+    border-top: none;
+    padding: 5px;
+    min-height: 55px;
+}
+
+.lcb-rooms-list-item-last-active {
+    float: none;
+    right: 10px;
+    bottom: 10px;
+    color: @white;
+    position: absolute;
+}
+
+.background-rooms {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.overplay-black {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.lcb-rooms-list-item-description {
+    color: @text-second;
+}

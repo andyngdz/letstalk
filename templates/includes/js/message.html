@@ -1,0 +1,29 @@
+<script type="text/x-handlebars-template" id="template-message">
+    <li class="lcb-message {{#if mentioned}}lcb-message-mentioned{{/if}} {{#if fragment}}lcb-message-fragment{{/if}} {{#if own}}lcb-message-own{{/if}} {{#if fragment}}lcb-message-paste{{/if}}" data-owner="{{owner.id}}">
+        {{#unless fragment}}
+            <img class="lcb-message-avatar lcb-avatar lcb-room-poke" src="https://www.gravatar.com/avatar/{{owner.avatar}}?s=48&d={{owner.defaultAvatar}}" />
+        {{/unless}}
+        <div class="lcb-message-meta">
+            {{#unless fragment}}
+                <span class="lcb-message-name">
+                    <span class="lcb-room-poke">
+                        <span class="lcb-message-displayname">
+                            {{owner.username}}
+                        </span>
+                        <time class="lcb-message-time" title="{{posted}}">{{posted}}</time>
+                    </span>
+                </span>
+            {{/unless}}
+            <div class="messages">
+              <div class="arrow-left"></div>
+              <div class="lcb-message-text">
+                  {{#unless paste}}
+                      {{text}}
+                  {{else}}
+                      <pre>{{text}}</pre>
+                  {{/unless}}
+              </div>
+            </div>
+        </div>
+    </li>
+</script>

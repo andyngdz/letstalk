@@ -1,0 +1,31 @@
+{
+    "name": "OverTask",
+    "description": "The power of developer",
+    "repository": "https://overtask.tech",
+    "logo": "http://i.imgur.com/eXTLHNN.png",
+    "keywords": [
+        "lets",
+        "chat",
+        "xmpp",
+        "nodejs",
+        "javascript",
+        "reactjs",
+        "html",
+        "css",
+        "technology",
+        "c"
+    ],
+    "addons": [
+        "mongolab"
+    ],
+    "env": {
+        "NODE_ENV": {
+            "description": "Configures Express for production",
+            "value": "production"
+        },
+        "LCB_SECRETS_COOKIE": {
+            "description": "Session cookies are signed with this secret to prevent tampering",
+            "generator": "secret"
+        }
+    }
+}

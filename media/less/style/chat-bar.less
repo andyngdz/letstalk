@@ -1,0 +1,70 @@
+.lcb-entry-button {
+    .icons {
+        color: @text;
+        font-weight: 700;
+        border-radius: 100%;
+
+        &:hover {
+            color: @lapisLazuli;
+        }
+    }
+}
+
+.lcb-room-description {
+    font-size: 1.25rem;
+}
+
+.lcb-room-header {
+    padding-top: 10px;
+}
+
+.lcb-room-meta {
+    max-width: 50%;
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.lcb-room-header-actions {
+    padding-top: 5px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.lcb-room-header-actions {
+    a {
+        padding: 10px 5px;
+        cursor: pointer;
+    }
+
+    i {
+        color: @text-second;
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        &:hover {
+            color: @lapisLazuli;
+        }
+    }
+
+    btn:focus,
+    btn:hover {
+        border: none;
+        outline: none;
+    }
+
+    .btn.active.focus,
+    .btn.active:focus,
+    .btn.focus,
+    .btn:active.focus,
+    .btn:active:focus,
+    .btn:focus {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+    }
+}
+
+.lcb-room-header-actions {
+    position: absolute;
+    right: 50px;
+}

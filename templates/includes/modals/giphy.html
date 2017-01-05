@@ -1,0 +1,16 @@
+<% if settings.giphy.enable %>
+    <div id="lcb-giphy" class="lcb-giphy" data-rating="<$ settings.giphy.rating $>" data-limit="<$ settings.giphy.limit $>" data-apikey="<$ settings.giphy.apiKey $>">
+        <form class="validate form-horizontal" action="./messages" method="POST">
+            <div>
+                <div class="form-group">
+                    <div class="col-sm-12 full-width">
+                        <input class="form-control search-giphy" name="search" placeholder="Keywords" />
+                    </div>
+                </div>
+                <div class="giphy-results">
+                    <ul></ul>
+                </div>
+            </div>
+        </form>
+    </div>
+    <% endif %>
