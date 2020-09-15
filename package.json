@@ -81,7 +81,7 @@
     "lodash": "^4.13.1",
     "md5": "^2.1.0",
     "moment": "^2.14.1",
-    "mongodb": "^2.2.8",
+    "mongodb": "^3.6.2",
     "mongoose": "^4.5.5",
     "mongoose-unique-validator": "^1.0.2",
     "mongoose-validate": "0.0.5",
